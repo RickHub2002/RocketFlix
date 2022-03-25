@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>RocketFlix</title>
+
+    <!--fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="full-content">
+        <img class="logo" src="./assets/images/shuffle.svg" />
+        <!--logo-->
+        <h1 class="title">Don't know what to watch?</h1>
+        <!--title-->
+        <div id="movieContainer" class="movie">
+<!--             <img id="movieImg" class="movie-img" /> -->
+            <div class="movie-info">
+                <h2 id="movieTitle" class="movie-title"></h2>
+                <p id="movieDesc" class="movie-desc"></p>
+            </div>
+        </div>
+        <!--movie-->
+        <button id="shuffleButton" class="shuffle-button">
+            <img class="shuffle" src="./assets/images/shuffle.svg" />
+            <!--shuffle-->
+            <span class="find-movie">Find movie</span>
+            <!--shuffle-->
+        </button>
+        <!--shuffle-button-->
+        <p class="desc">
+            Click on "Find movie" and we will bring information about a movie 
+            for you to watch today.
+        </p>
+        <!--desc-->
+    </section>
+    <!--full-content-->
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!--axios-->
+    <script type="module" src="./assets/js/main.js"></script>
+</body>
+</html>
