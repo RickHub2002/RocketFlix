@@ -1,0 +1,138 @@
+html, body {
+   height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --title: #fffcf9;
+    --subtitle: #edebe8;
+    --bg-button: #e9e6e3;
+    --background: linear-gradient(43deg, #102d71 0%, #000000 52%, #c12a23 100%);
+}
+
+body {
+
+    
+    background: var(--background) no-repeat center center fixed;
+
+    width: 100%;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+.full-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    padding: 20px;
+
+    text-align: center;
+}
+
+.logo {
+    width: 87px;
+    height: 62px;
+}
+
+.title {
+    color: var(--title);
+
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.shuffle-button {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    padding: 5px;
+
+    border-radius: 5px;
+
+    background-color: var(--bg-button);
+
+    border: 2px solid #282828;
+}
+
+.shuffle-button:hover {
+    cursor: pointer;
+    filter: brightness(120%);
+    transition: 0.2s;
+}
+
+.find-movie {
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.shuffle {
+    width: 35px;
+    height: 25px;
+}
+
+.desc {
+    color: var(--subtitle);
+
+    font-size: 0.875rem;
+    font-weight: 500;
+
+    max-width: 40%;
+}
+
+/*DOM*/
+.movie {
+    display: flex;
+    gap: 1rem;
+
+    width: 50%;
+}
+
+.movie-img {
+    width: 171px;
+    height: 240px;
+
+    object-fit: cover;
+}
+
+.movie-info {
+    text-align: left;
+
+    color: var(--title);
+}
+
+.movie-title {
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.movie-desc {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 850px) {
+    .movie {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    
+        width: 50%;
+    }
+
+    .movie-info {
+        text-align: center;
+    
+        color: var(--title);
+    }
+}
